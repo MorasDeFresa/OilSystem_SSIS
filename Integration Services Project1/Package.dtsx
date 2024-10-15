@@ -11,8 +11,8 @@
   DTS:LocaleID="9226"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="60"
-  DTS:VersionGUID="{A6212A1B-7474-4E1E-BDBB-2425DD58394C}">
+  DTS:VersionBuild="73"
+  DTS:VersionGUID="{53819222-E07F-4DD0-ACCE-765F31466C1C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -37,7 +37,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\user\Downloads\Universidad\BigData\Nueva carpeta\OilSystem_SSIS\OilData.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\user\Downloads\Universidad\BigData\Nueva carpeta\OilSystem_SSIS\OilData.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -49,7 +49,19 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\user\Downloads\Universidad\BigData\Nueva carpeta\OilSystem_SSIS\OilData.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\user\Downloads\Universidad\BigData\Nueva carpeta\OilSystem_SSIS\OilData.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel 3]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{A3102A2E-D25A-43D9-8363-28CFD3E32DEA}"
+      DTS:ObjectName="Administrador de conexiones con Excel 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\user\Downloads\Universidad\BigData\Nueva carpeta\OilSystem_SSIS\OilData.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -77,7 +89,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1WOs+PxCKU2TfrYPYTv7HAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABysSsFezVuXmX1zO99PSdgCDTY9TtV/SgmZXF432euNgAAAAAOgAAAAAIAACAAAAA/pUrM7i9Ft3lkmx6xNB1Z53PQDGk/nJbA8DiVfUrF2SAAAAAwIZol7Q17riiC+yUtWvQJ2pnuQWMHRU9xDJWl6e4aU0AAAAA+qOk2Y63lIh+jyt7Yx1CA9HLGUQNgKVAul5BMu65REr5cO4g7JlHp3Qx5aHQMAmcFrkfkJlyi0HSeHMwD67rX</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1WOs+PxCKU2TfrYPYTv7HAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADL5cK8OLD/jaKwwEZI1n9PXswn5THOolQTke8/Tfcn6wAAAAAOgAAAAAIAACAAAAABd3i+6VOL8APCWHiDr+WPcJHCTnmcs85YwUUdczXQ9SAAAADE4abD9Q3l6v1g4v+xPA6de6bk8dUu1P9aZl8vSV2Yx0AAAABNLsFi7um0go6uB8SZOFQxgOntuJkEd5PpKjzZWpbdxWbCZT8vP/G1UlV0NFnbadzVO+BRkWVHB0QCguxtWMRU</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -2524,12 +2536,12 @@
                       refId="Package\Data Flow Task 2\Data Conversion.Inputs[Data Conversion Input].Columns[Numero Proceso]"
                       cachedDataType="i4"
                       cachedName="Numero Proceso"
+                      cachedSortKeyPosition="1"
                       lineageId="Package\Data Flow Task 2\Sort.Outputs[Sort Output].Columns[Numero Proceso]" />
                     <inputColumn
                       refId="Package\Data Flow Task 2\Data Conversion.Inputs[Data Conversion Input].Columns[Fecha De Inicio Del Proceso]"
                       cachedDataType="dbTimeStamp"
                       cachedName="Fecha De Inicio Del Proceso"
-                      cachedSortKeyPosition="2"
                       lineageId="Package\Data Flow Task 2\Sort.Outputs[Sort Output].Columns[Fecha De Inicio Del Proceso]" />
                     <inputColumn
                       refId="Package\Data Flow Task 2\Data Conversion.Inputs[Data Conversion Input].Columns[Fecha De Fin Del Proceso]"
@@ -2542,7 +2554,6 @@
                       cachedDataType="str"
                       cachedLength="250"
                       cachedName="Tipo De Proceso"
-                      cachedSortKeyPosition="1"
                       lineageId="Package\Data Flow Task 2\Sort.Outputs[Sort Output].Columns[Tipo De Proceso]" />
                     <inputColumn
                       refId="Package\Data Flow Task 2\Data Conversion.Inputs[Data Conversion Input].Columns[Proceso De Refineria]"
@@ -3395,6 +3406,15 @@
                       lineageId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].Columns[Apellido Operario]"
                       name="Apellido Operario"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].Columns[RowNum]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[RowNum]"
+                      lineageId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].Columns[RowNum]"
+                      name="RowNum"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -3470,6 +3490,10 @@
                       dataType="str"
                       length="250"
                       name="Apellido Operario" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[RowNum]"
+                      dataType="i8"
+                      name="RowNum" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -3564,6 +3588,11 @@
                       lineageId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Apellido Operario]"
                       name="Apellido Operario" />
                     <outputColumn
+                      refId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[RowNum]"
+                      dataType="i8"
+                      lineageId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[RowNum]"
+                      name="RowNum" />
+                    <outputColumn
                       refId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
                       lineageId="Package\Data Flow Task 2\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
@@ -3616,7 +3645,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
+                          name="NewSortKeyPosition">1</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -3632,7 +3661,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">2</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -3666,7 +3695,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">1</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -3857,7 +3886,8 @@
                       refId="Package\Data Flow Task 2\Sort.Outputs[Sort Output].Columns[Numero Proceso]"
                       dataType="i4"
                       lineageId="Package\Data Flow Task 2\Sort.Outputs[Sort Output].Columns[Numero Proceso]"
-                      name="Numero Proceso">
+                      name="Numero Proceso"
+                      sortKeyPosition="1">
                       <properties>
                         <property
                           containsID="true"
@@ -3870,8 +3900,7 @@
                       refId="Package\Data Flow Task 2\Sort.Outputs[Sort Output].Columns[Fecha De Inicio Del Proceso]"
                       dataType="dbTimeStamp"
                       lineageId="Package\Data Flow Task 2\Sort.Outputs[Sort Output].Columns[Fecha De Inicio Del Proceso]"
-                      name="Fecha De Inicio Del Proceso"
-                      sortKeyPosition="2">
+                      name="Fecha De Inicio Del Proceso">
                       <properties>
                         <property
                           containsID="true"
@@ -3899,8 +3928,7 @@
                       dataType="str"
                       length="250"
                       lineageId="Package\Data Flow Task 2\Sort.Outputs[Sort Output].Columns[Tipo De Proceso]"
-                      name="Tipo De Proceso"
-                      sortKeyPosition="1">
+                      name="Tipo De Proceso">
                       <properties>
                         <property
                           containsID="true"
@@ -4088,7 +4116,6 @@
       DTS:refId="Package\Data Flow Task 3"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{D3641A30-DA36-45A7-B87A-0268B8F88564}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -4116,6 +4143,7 @@
                       refId="Package\Data Flow Task 3\Conditional Split.Inputs[Conditional Split Input].Columns[TotalCompras]"
                       cachedDataType="i4"
                       cachedName="TotalCompras"
+                      cachedSortKeyPosition="1"
                       lineageId="Package\Data Flow Task 3\Sort.Outputs[Sort Output].Columns[TotalCompras]" />
                   </inputColumns>
                   <externalMetadataColumns />
@@ -4216,6 +4244,7 @@
                       refId="Package\Data Flow Task 3\Data Conversion.Inputs[Data Conversion Input].Columns[TotalCompras]"
                       cachedDataType="i4"
                       cachedName="TotalCompras"
+                      cachedSortKeyPosition="1"
                       lineageId="Package\Data Flow Task 3\Sort.Outputs[Sort Output].Columns[TotalCompras]" />
                     <inputColumn
                       refId="Package\Data Flow Task 3\Data Conversion.Inputs[Data Conversion Input].Columns[MontoTotalGastado]"
@@ -4236,7 +4265,6 @@
                       refId="Package\Data Flow Task 3\Data Conversion.Inputs[Data Conversion Input].Columns[DiasEntrePrimeraYUltimaCompra]"
                       cachedDataType="i4"
                       cachedName="DiasEntrePrimeraYUltimaCompra"
-                      cachedSortKeyPosition="1"
                       lineageId="Package\Data Flow Task 3\Sort.Outputs[Sort Output].Columns[DiasEntrePrimeraYUltimaCompra]" />
                     <inputColumn
                       refId="Package\Data Flow Task 3\Data Conversion.Inputs[Data Conversion Input].Columns[BancosTransaccion]"
@@ -4252,6 +4280,27 @@
                       cachedLength="18"
                       cachedName="CategoriaCliente"
                       lineageId="Package\Data Flow Task 3\Sort.Outputs[Sort Output].Columns[CategoriaCliente]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 3\Data Conversion.Inputs[Data Conversion Input].Columns[NombreMunicipio]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="250"
+                      cachedName="NombreMunicipio"
+                      lineageId="Package\Data Flow Task 3\Sort.Outputs[Sort Output].Columns[NombreMunicipio]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 3\Data Conversion.Inputs[Data Conversion Input].Columns[NombreDepartamento]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="250"
+                      cachedName="NombreDepartamento"
+                      lineageId="Package\Data Flow Task 3\Sort.Outputs[Sort Output].Columns[NombreDepartamento]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 3\Data Conversion.Inputs[Data Conversion Input].Columns[NombrePais]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="250"
+                      cachedName="NombrePais"
+                      lineageId="Package\Data Flow Task 3\Sort.Outputs[Sort Output].Columns[NombrePais]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -4409,7 +4458,7 @@
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      length="50"
+                      length="500"
                       lineageId="Package\Data Flow Task 3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of BancosTransaccion]"
                       name="Copy of BancosTransaccion"
                       truncationRowDisposition="FailComponent">
@@ -4430,7 +4479,7 @@
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      length="18"
+                      length="50"
                       lineageId="Package\Data Flow Task 3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of CategoriaCliente]"
                       name="Copy of CategoriaCliente"
                       truncationRowDisposition="FailComponent">
@@ -4440,6 +4489,69 @@
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
                           name="SourceInputColumnLineageID">#{Package\Data Flow Task 3\Sort.Outputs[Sort Output].Columns[CategoriaCliente]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NombreMunicipio]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Flow Task 3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NombreMunicipio]"
+                      name="Copy of NombreMunicipio"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task 3\Sort.Outputs[Sort Output].Columns[NombreMunicipio]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NombreDepartamento]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Flow Task 3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NombreDepartamento]"
+                      name="Copy of NombreDepartamento"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task 3\Sort.Outputs[Sort Output].Columns[NombreDepartamento]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NombrePais]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Flow Task 3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NombrePais]"
+                      name="Copy of NombrePais"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task 3\Sort.Outputs[Sort Output].Columns[NombrePais]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -4523,8 +4635,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task 3\Excel Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel 2]"
-                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel 2]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel 3]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4582,14 +4694,35 @@
                     <inputColumn
                       refId="Package\Data Flow Task 3\Excel Destination.Inputs[Excel Destination Input].Columns[Copy of BancosTransaccion]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="500"
                       cachedName="Copy of BancosTransaccion"
                       externalMetadataColumnId="Package\Data Flow Task 3\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[BancosTransaccion]"
                       lineageId="Package\Data Flow Task 3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of BancosTransaccion]" />
                     <inputColumn
+                      refId="Package\Data Flow Task 3\Excel Destination.Inputs[Excel Destination Input].Columns[Copy of NombreMunicipio]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of NombreMunicipio"
+                      externalMetadataColumnId="Package\Data Flow Task 3\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[NombreMunicipio]"
+                      lineageId="Package\Data Flow Task 3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NombreMunicipio]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 3\Excel Destination.Inputs[Excel Destination Input].Columns[Copy of NombreDepartamento]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of NombreDepartamento"
+                      externalMetadataColumnId="Package\Data Flow Task 3\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[NombreDepartamento]"
+                      lineageId="Package\Data Flow Task 3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NombreDepartamento]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 3\Excel Destination.Inputs[Excel Destination Input].Columns[Copy of NombrePais]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of NombrePais"
+                      externalMetadataColumnId="Package\Data Flow Task 3\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[NombrePais]"
+                      lineageId="Package\Data Flow Task 3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NombrePais]" />
+                    <inputColumn
                       refId="Package\Data Flow Task 3\Excel Destination.Inputs[Excel Destination Input].Columns[Copy of CategoriaCliente]"
                       cachedDataType="wstr"
-                      cachedLength="18"
+                      cachedLength="50"
                       cachedName="Copy of CategoriaCliente"
                       externalMetadataColumnId="Package\Data Flow Task 3\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[CategoriaCliente]"
                       lineageId="Package\Data Flow Task 3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of CategoriaCliente]" />
@@ -4634,6 +4767,21 @@
                       dataType="wstr"
                       length="255"
                       name="BancosTransaccion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[NombreMunicipio]"
+                      dataType="wstr"
+                      length="255"
+                      name="NombreMunicipio" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[NombreDepartamento]"
+                      dataType="wstr"
+                      length="255"
+                      name="NombreDepartamento" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[NombrePais]"
+                      dataType="wstr"
+                      length="255"
+                      name="NombrePais" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task 3\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[CategoriaCliente]"
                       dataType="wstr"
@@ -4815,6 +4963,39 @@
                       lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[CategoriaCliente]"
                       name="CategoriaCliente"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[NombreMunicipio]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NombreMunicipio]"
+                      length="250"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[NombreMunicipio]"
+                      name="NombreMunicipio"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[NombreDepartamento]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NombreDepartamento]"
+                      length="250"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[NombreDepartamento]"
+                      name="NombreDepartamento"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[NombrePais]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NombrePais]"
+                      length="250"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[NombrePais]"
+                      name="NombrePais"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -4860,6 +5041,24 @@
                       dataType="str"
                       length="18"
                       name="CategoriaCliente" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NombreMunicipio]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      name="NombreMunicipio" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NombreDepartamento]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      name="NombreDepartamento" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NombrePais]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      name="NombrePais" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -4911,6 +5110,27 @@
                       length="8000"
                       lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[BancosTransaccion]"
                       name="BancosTransaccion" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NombreMunicipio]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NombreMunicipio]"
+                      name="NombreMunicipio" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NombreDepartamento]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NombreDepartamento]"
+                      name="NombreDepartamento" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NombrePais]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NombrePais]"
+                      name="NombrePais" />
                     <outputColumn
                       refId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CategoriaCliente]"
                       codePage="1252"
@@ -5005,7 +5225,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
+                          name="NewSortKeyPosition">1</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5069,7 +5289,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">1</property>
+                          name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -5097,6 +5317,60 @@
                       cachedLength="18"
                       cachedName="CategoriaCliente"
                       lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[CategoriaCliente]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 3\Sort.Inputs[Sort Input].Columns[NombreMunicipio]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="250"
+                      cachedName="NombreMunicipio"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[NombreMunicipio]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 3\Sort.Inputs[Sort Input].Columns[NombreDepartamento]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="250"
+                      cachedName="NombreDepartamento"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[NombreDepartamento]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 3\Sort.Inputs[Sort Input].Columns[NombrePais]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="250"
+                      cachedName="NombrePais"
+                      lineageId="Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[NombrePais]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -5150,7 +5424,8 @@
                       refId="Package\Data Flow Task 3\Sort.Outputs[Sort Output].Columns[TotalCompras]"
                       dataType="i4"
                       lineageId="Package\Data Flow Task 3\Sort.Outputs[Sort Output].Columns[TotalCompras]"
-                      name="TotalCompras">
+                      name="TotalCompras"
+                      sortKeyPosition="1">
                       <properties>
                         <property
                           containsID="true"
@@ -5202,8 +5477,7 @@
                       refId="Package\Data Flow Task 3\Sort.Outputs[Sort Output].Columns[DiasEntrePrimeraYUltimaCompra]"
                       dataType="i4"
                       lineageId="Package\Data Flow Task 3\Sort.Outputs[Sort Output].Columns[DiasEntrePrimeraYUltimaCompra]"
-                      name="DiasEntrePrimeraYUltimaCompra"
-                      sortKeyPosition="1">
+                      name="DiasEntrePrimeraYUltimaCompra">
                       <properties>
                         <property
                           containsID="true"
@@ -5240,6 +5514,51 @@
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
                           name="SortColumnId">#{Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[CategoriaCliente]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\Sort.Outputs[Sort Output].Columns[NombreMunicipio]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      lineageId="Package\Data Flow Task 3\Sort.Outputs[Sort Output].Columns[NombreMunicipio]"
+                      name="NombreMunicipio">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[NombreMunicipio]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\Sort.Outputs[Sort Output].Columns[NombreDepartamento]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      lineageId="Package\Data Flow Task 3\Sort.Outputs[Sort Output].Columns[NombreDepartamento]"
+                      name="NombreDepartamento">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[NombreDepartamento]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 3\Sort.Outputs[Sort Output].Columns[NombrePais]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      lineageId="Package\Data Flow Task 3\Sort.Outputs[Sort Output].Columns[NombrePais]"
+                      name="NombrePais">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 3\OLE DB Source.Outputs[OLE DB Source Output].Columns[NombrePais]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -5297,11 +5616,11 @@
         <NodeLayout
           Size="164,42"
           Id="Package\Data Flow Task 2"
-          TopLeft="559,110" />
+          TopLeft="558,110" />
         <NodeLayout
           Size="164,42"
           Id="Package\Data Flow Task 3"
-          TopLeft="563,172" />
+          TopLeft="561,162" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -5484,25 +5803,61 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="157,42"
-          Id="Package\Data Flow Task 1\OLE DB Source"
-          TopLeft="273.5,123.5" />
+          Size="161,42"
+          Id="Package\Data Flow Task 1\Data Conversion"
+          TopLeft="640,310" />
         <NodeLayout
           Size="99,42"
           Id="Package\Data Flow Task 1\Sort"
           TopLeft="300,248" />
         <NodeLayout
-          Size="161,42"
-          Id="Package\Data Flow Task 1\Data Conversion"
-          TopLeft="640,310" />
-        <NodeLayout
           Size="164,42"
           Id="Package\Data Flow Task 1\Excel Destination"
           TopLeft="603.5,394.5" />
         <NodeLayout
+          Size="157,42"
+          Id="Package\Data Flow Task 1\OLE DB Source"
+          TopLeft="273.5,123.5" />
+        <NodeLayout
           Size="159,42"
           Id="Package\Data Flow Task 1\Conditional Split"
           TopLeft="419,289" />
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Case 1]"
+          TopLeft="578,310">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="62,21"
+              Start="0,0"
+              End="54.5,21">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="27,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="27,0"
+                    Point2="31,0"
+                    Point3="31,4" />
+                  <mssgle:LineSegment
+                    End="31,17" />
+                  <mssgle:CubicBezierSegment
+                    Point1="31,17"
+                    Point2="31,21"
+                    Point3="35,21" />
+                  <mssgle:LineSegment
+                    End="54.5,21" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="15.7819140625,-15.5537109375,30.436171875,9.5537109375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task 1.Paths[Sort Output]"
           TopLeft="399,266.5">
@@ -5587,42 +5942,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task 1.Paths[Case 1]"
-          TopLeft="578,310">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="62,21"
-              Start="0,0"
-              End="54.5,21">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="27,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="27,0"
-                    Point2="31,0"
-                    Point3="31,4" />
-                  <mssgle:LineSegment
-                    End="31,17" />
-                  <mssgle:CubicBezierSegment
-                    Point1="31,17"
-                    Point2="31,21"
-                    Point3="35,21" />
-                  <mssgle:LineSegment
-                    End="54.5,21" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="15.7819140625,-15.5537109375,30.436171875,9.5537109375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -5658,89 +5977,25 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="157,42"
-          Id="Package\Data Flow Task 2\OLE DB Source"
-          TopLeft="272,125" />
+          Size="161,42"
+          Id="Package\Data Flow Task 2\Data Conversion"
+          TopLeft="622,398" />
+        <NodeLayout
+          Size="164,42"
+          Id="Package\Data Flow Task 2\Excel Destination"
+          TopLeft="700,517" />
         <NodeLayout
           Size="99,42"
           Id="Package\Data Flow Task 2\Sort"
           TopLeft="349,231" />
-        <EdgeLayout
-          Id="Package\Data Flow Task 2.Paths[OLE DB Source Output]"
-          TopLeft="350.5,167">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="48,64"
-              Start="0,0"
-              End="48,56.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28"
-                    Point2="0,32"
-                    Point3="4,32" />
-                  <mssgle:LineSegment
-                    End="44,32" />
-                  <mssgle:CubicBezierSegment
-                    Point1="44,32"
-                    Point2="48,32"
-                    Point3="48,36" />
-                  <mssgle:LineSegment
-                    End="48,56.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="159,42"
           Id="Package\Data Flow Task 2\Conditional Split"
           TopLeft="451,315" />
-        <EdgeLayout
-          Id="Package\Data Flow Task 2.Paths[Sort Output]"
-          TopLeft="398.5,273">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="132,42"
-              Start="0,0"
-              End="132,34.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17"
-                    Point2="0,21"
-                    Point3="4,21" />
-                  <mssgle:LineSegment
-                    End="128,21" />
-                  <mssgle:CubicBezierSegment
-                    Point1="128,21"
-                    Point2="132,21"
-                    Point3="132,25" />
-                  <mssgle:LineSegment
-                    End="132,34.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
-          Size="161,42"
-          Id="Package\Data Flow Task 2\Data Conversion"
-          TopLeft="622,398" />
+          Size="157,42"
+          Id="Package\Data Flow Task 2\OLE DB Source"
+          TopLeft="272,125" />
         <EdgeLayout
           Id="Package\Data Flow Task 2.Paths[Case 1]"
           TopLeft="530.5,357">
@@ -5777,10 +6032,74 @@
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="164,42"
-          Id="Package\Data Flow Task 2\Excel Destination"
-          TopLeft="700,517" />
+        <EdgeLayout
+          Id="Package\Data Flow Task 2.Paths[Sort Output]"
+          TopLeft="398.5,273">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="132,42"
+              Start="0,0"
+              End="132,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17"
+                    Point2="0,21"
+                    Point3="4,21" />
+                  <mssgle:LineSegment
+                    End="128,21" />
+                  <mssgle:CubicBezierSegment
+                    Point1="128,21"
+                    Point2="132,21"
+                    Point3="132,25" />
+                  <mssgle:LineSegment
+                    End="132,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 2.Paths[OLE DB Source Output]"
+          TopLeft="350.5,167">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="48,64"
+              Start="0,0"
+              End="48,56.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28"
+                    Point2="0,32"
+                    Point3="4,32" />
+                  <mssgle:LineSegment
+                    End="44,32" />
+                  <mssgle:CubicBezierSegment
+                    Point1="44,32"
+                    Point2="48,32"
+                    Point3="48,36" />
+                  <mssgle:LineSegment
+                    End="48,56.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task 2.Paths[Data Conversion Output]"
           TopLeft="702.5,440">
@@ -5819,19 +6138,6 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task 2\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">View</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task 2\Excel Destination">
     <Properties>
       <Property>
@@ -5844,11 +6150,28 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task 2\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">View</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Data Flow Task 3">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Data Flow Task 3\Data Conversion"
+          TopLeft="530,317" />
         <NodeLayout
           Size="157,42"
           Id="Package\Data Flow Task 3\OLE DB Source"
@@ -5856,143 +6179,139 @@
         <NodeLayout
           Size="99,42"
           Id="Package\Data Flow Task 3\Sort"
-          TopLeft="330,177" />
-        <EdgeLayout
-          Id="Package\Data Flow Task 3.Paths[OLE DB Source Output]"
-          TopLeft="302.5,119">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="77,58"
-              Start="0,0"
-              End="77,50.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,25"
-                    Point2="0,29"
-                    Point3="4,29" />
-                  <mssgle:LineSegment
-                    End="73,29" />
-                  <mssgle:CubicBezierSegment
-                    Point1="73,29"
-                    Point2="77,29"
-                    Point3="77,33" />
-                  <mssgle:LineSegment
-                    End="77,50.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="161,42"
-          Id="Package\Data Flow Task 3\Data Conversion"
-          TopLeft="579,305" />
+          TopLeft="368,187" />
         <NodeLayout
           Size="159,42"
           Id="Package\Data Flow Task 3\Conditional Split"
-          TopLeft="442,235" />
-        <EdgeLayout
-          Id="Package\Data Flow Task 3.Paths[Sort Output]"
-          TopLeft="429,198">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="92.5,37"
-              Start="0,0"
-              End="92.5,29.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="88.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="88.5,0"
-                    Point2="92.5,0"
-                    Point3="92.5,4" />
-                  <mssgle:LineSegment
-                    End="92.5,29.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="475,238" />
+        <NodeLayout
+          Size="164,42"
+          Id="Package\Data Flow Task 3\Excel Destination"
+          TopLeft="711,425" />
         <EdgeLayout
           Id="Package\Data Flow Task 3.Paths[Case 1]"
-          TopLeft="521.5,277">
+          TopLeft="554.5,280">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="138,28"
+              EndConnector="56,37"
               Start="0,0"
-              End="138,20.5">
+              End="56,29.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,10" />
+                    End="0,14.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,10"
-                    Point2="0,14"
-                    Point3="4,14" />
+                    Point1="0,14.5"
+                    Point2="0,18.5"
+                    Point3="4,18.5" />
                   <mssgle:LineSegment
-                    End="134,14" />
+                    End="52,18.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="134,14"
-                    Point2="138,14"
-                    Point3="138,18" />
+                    Point1="52,18.5"
+                    Point2="56,18.5"
+                    Point3="56,22.5" />
                   <mssgle:LineSegment
-                    End="138,20.5" />
+                    End="56,29.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="53.7819140625,19,30.436171875,9.5537109375"
+              BoundingBox="12.7819140625,23.5,30.436171875,9.5537109375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="164,42"
-          Id="Package\Data Flow Task 3\Excel Destination"
-          TopLeft="713,401" />
         <EdgeLayout
-          Id="Package\Data Flow Task 3.Paths[Data Conversion Output]"
-          TopLeft="659.5,347">
+          Id="Package\Data Flow Task 3.Paths[Sort Output]"
+          TopLeft="467,208">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="135.5,54"
+              EndConnector="87.5,30"
               Start="0,0"
-              End="135.5,46.5">
+              End="87.5,22.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,23" />
+                    End="83.5,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,23"
-                    Point2="0,27"
-                    Point3="4,27" />
+                    Point1="83.5,0"
+                    Point2="87.5,0"
+                    Point3="87.5,4" />
                   <mssgle:LineSegment
-                    End="131.5,27" />
+                    End="87.5,22.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 3.Paths[OLE DB Source Output]"
+          TopLeft="302.5,119">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="115,68"
+              Start="0,0"
+              End="115,60.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30" />
                   <mssgle:CubicBezierSegment
-                    Point1="131.5,27"
-                    Point2="135.5,27"
-                    Point3="135.5,31" />
+                    Point1="0,30"
+                    Point2="0,34"
+                    Point3="4,34" />
                   <mssgle:LineSegment
-                    End="135.5,46.5" />
+                    End="111,34" />
+                  <mssgle:CubicBezierSegment
+                    Point1="111,34"
+                    Point2="115,34"
+                    Point3="115,38" />
+                  <mssgle:LineSegment
+                    End="115,60.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 3.Paths[Data Conversion Output]"
+          TopLeft="610.5,359">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="182.5,66"
+              Start="0,0"
+              End="182.5,58.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29"
+                    Point2="0,33"
+                    Point3="4,33" />
+                  <mssgle:LineSegment
+                    End="178.5,33" />
+                  <mssgle:CubicBezierSegment
+                    Point1="178.5,33"
+                    Point2="182.5,33"
+                    Point3="182.5,37" />
+                  <mssgle:LineSegment
+                    End="182.5,58.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6005,19 +6324,6 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task 3\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">View</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task 3\Excel Destination">
     <Properties>
       <Property>
@@ -6027,6 +6333,19 @@
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task 3\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">View</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
