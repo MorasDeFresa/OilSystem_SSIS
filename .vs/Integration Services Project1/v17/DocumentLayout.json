@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\user\\Downloads\\Universidad\\BigData\\Nueva carpeta\\OilSystem_SSIS\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Downloads\\OilSystem_SSIS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4C03EAA5-B28C-4303-9B9E-DA835C52ADBC}|Integration Services Project1\\Integration Services Project1.dtproj|C:\\Users\\user\\Downloads\\Universidad\\BigData\\Nueva carpeta\\OilSystem_SSIS\\Integration Services Project1\\Package.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "AbsoluteMoniker": "D:0:0:{4C03EAA5-B28C-4303-9B9E-DA835C52ADBC}|Integration Services Project1\\Integration Services Project1.dtproj|C:\\Users\\Administrator\\Downloads\\OilSystem_SSIS\\Integration Services Project1\\Package.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
       "RelativeMoniker": "D:0:0:{4C03EAA5-B28C-4303-9B9E-DA835C52ADBC}|Integration Services Project1\\Integration Services Project1.dtproj|solutionrelative:Integration Services Project1\\Package.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     }
   ],
@@ -19,24 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Package.dtsx [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\user\\Downloads\\Universidad\\BigData\\Nueva carpeta\\OilSystem_SSIS\\Integration Services Project1\\Package.dtsx",
+              "Title": "Package.dtsx [Design]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Downloads\\OilSystem_SSIS\\Integration Services Project1\\Package.dtsx",
               "RelativeDocumentMoniker": "Integration Services Project1\\Package.dtsx",
-              "ToolTip": "C:\\Users\\user\\Downloads\\Universidad\\BigData\\Nueva carpeta\\OilSystem_SSIS\\Integration Services Project1\\Package.dtsx [Dise\u00F1o]*",
-              "RelativeToolTip": "Integration Services Project1\\Package.dtsx [Dise\u00F1o]*",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
+              "ToolTip": "C:\\Users\\Administrator\\Downloads\\OilSystem_SSIS\\Integration Services Project1\\Package.dtsx [Design]*",
+              "RelativeToolTip": "Integration Services Project1\\Package.dtsx [Design]*",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVDhPjVO/S8NAGH2RtvSPaPeSwUVchS6CexYRJCBYUJC6SEFBBIXiIigKEYRSCC4unQTXDsVipkpbUJHSRTQ2/oimNCTnkOTMXdrqg4Pv\u002B\u002B69ly933wkAoFaqBGPQezdx9/CYO9xZOWU2CPF0aqVKXMcZuY7Kl2R6bomsbZ8sMwYAJvjCKOxtraNW1xTe5N8Gm7sHAIBaXVPC9Vg4KZSaNC7KIs0/jQQW5yUAQPn8gnIwrAM7nYGdzjB5cnIGqwuzDC9AxCDebSPebUdyc8DQWPx1Cx\u002BWQzrG722EtZEOeJgDwOgDukUQSyT5bdagUGrSBU6sW4A7ZNwiHQSHGBa/fANvFuDafZ4eNQgOLSx\u002B/gK06xa6dgpZKY\u002BNswbBlELAz0FRFumXjT7Bq\u002BXFpu31XpRFdJ5M3N73sO9rqMGxehWEI5Ci4puWTqsx\u002BK\u002BNnzAeWSlPxWEDgWGNg//PDLSc8AOMxO8cPcnGpQAAAABJRU5ErkJggg==",
               "WhenOpened": "2024-09-20T21:17:00.208Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            }
-          ]
-        },
-        {
-          "DockedHeight": 200,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+              "EditorCaption": " [Design]"
             }
           ]
         }
